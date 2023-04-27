@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=DM+Sans&family=Dancing+Script:wght@500&family=Fredoka&family=Kaushan+Script&family=Merriweather&family=Montserrat&family=Noto+Serif:ital@1&family=Outfit&family=Poppins&family=Sacramento&family=Vujahday+Script&display=swap');
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+   
+}
+input{
+font-family: 'Fredoka', sans-serif;
+border: none ;
+outline: none ;
+}
+body {
+  /* display: flex; */
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Images/pattern-2.png");
+}
+.whole-cont {
+  background-image: url(sea1.jpeg);
+  background-size: cover;
+  padding: 50px;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  background-color: rgba(0, 0, 0, 0.385);
+  padding: 28px;
+  margin: 0px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+
+.form-title {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 6px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-bottom: solid 1px #ff5522;
+  font-family: 'Kaushan Script', cursive ;
+margin-top: 0;
+}
+
+.user-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.user-input:nth-child(2n) {
+  justify-content: end;
+}
+
+.user-input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+.user-input label {
+  width: 95%;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.user-input input {
+  height: 40px;
+  width: 95%;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+font-family: 'Fredoka', 'Font Awesome 5 Free';
+}
+.gender-skills{
+  display: flex;
+  /* align-items: flex-end; */
+  width: 100%;
+  justify-content: space-between;
+  /* border: 1px solid beige; */
+}
+.gender ,.gen-category,.skill , .skill-cat{
+display: flex;
+flex-direction: column;
+
+}
+.gender, .skill{
+  width: 50%;
+}
+
+.gender-title,
+.skill-title {
+  width: 30px;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+}
+
+.gen-category,
+.skill-cat {
+  margin: 15px 0;
+  color: white;
+
+  /* border: 1px solid yellow; */
+}
+
+.gen-category label,
+.skill-cat label {
+  padding: 0 20px 0 5px;
+}
+
+.gen-category label,
+.gen-category input,
+.form-submit input,
+.skill-cat label,
+.skill-cat input {
+  cursor: pointer;
+}
+
+.form-submit {
+  margin-top: 30px;
+}
+
+.form-submit button {
+  display: block;
+  cursor: pointer;
+  width: 80%;
+  margin: 10px auto;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background:#fd5c2bf5;
+}
+
+.form-submit button:hover {
+   background:#ff5522;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.692);
+}
+
+.box {
+  font-family: "Merriweather";
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  padding: 15px;
+  border: solid;
+  margin: 19px;
+}
+
+h5 {
+  padding: 8px;
+  font-family: "Montserrat";
+}
+
+.info {
+  float: right;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive ;
+  text-align: center;
+  margin: 30px 0px 10px;
+  padding: 10px;
+  font-size: 2.7rem;
+}
+
+.avatar {
+  width: 25%;
+  margin: 0;
+  float: left;
+}
+
+@media (max-width: 600px) {
+  .container {
+    min-width: 280px;
+  }
+
+  .user-input {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  .user-input:nth-child(2n) {
+    justify-content: space-between;
+  }
+
+  .gen-category {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .user-info {
+    max-height: 380px;
+    overflow: auto;
+  }
+
+  .user-info::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.card {
+  margin: 20px;
+  border-radius: 6px;
+  color: black;
+  display: flex;
+  padding: 10px;
+  text-align: left !important;
+}
+.card:hover{
+ 
+}
+.bagCo {
+  background-color:aliceblue;
+  /* background-image: url("../Images/pattern-1.png"); */
+  padding: 10px;
+    transition: transform 0.4s ease;
+}
+.bagCo:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(161, 212, 251, 0.75);
+}
+
+.row {
+  margin-right: 9.8px !important;
+}
+
+h5,
+p {
+  font-weight: 300;
+  padding: 5px;
+}
+
+.col-img {
+  width: 70%;
+  padding: 20px;
+  margin: auto;
+}
+
+.col-img img {
+  width: 30%;
+}
+
+@media (max-width: 760px) {
+  .card {
+    display: block;
+  }
+}

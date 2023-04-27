@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link fontawsome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    /> -->
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="whole-cont">
+      <div class="container">
+        <h1 class="form-title">Registration</h1>
+        <form action="/" method="post" id="userForm">
+          <div class="user-info">
+            <div class="user-input">
+              <label for="fullName">Full Name:</label>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                placeholder="&#xf007; @name"
+              />
+            </div>
+            <div class="user-input">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="&#xf0e0; wxyz@example.com"
+              />
+            </div>
+            <div class="user-input">
+              <label for="website">Your college</label>
+              <input
+                type="text"
+                name="website"
+                id="website"
+                placeholder="&#xf0c1; Website Link"
+              />
+            </div>
+            <div class="user-input">
+              <label for="imageLink">Your Github link:</label>
+              <input
+                type="link"
+                name="imageLink"
+                id="imageLink"
+                placeholder="&#xf3e0; Enter Image Link"
+              />
+            </div>
+          </div>
+          <div class="gender-skills">
+          <div class="gender">
+            <span class="gender-title">Gender</span>
+            <div class="gen-category">
+             
+              <label for="male"> <input type="radio" name="gender" id="male" value="Male" /> Male</label>
+
+              
+              <label for="female"><input type="radio" name="gender" id="female" value="Female" /> Female</label>
+
+             
+              <label for="other"> <input type="radio" name="gender" id="other" value="Other" /> Other</label>
+
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill-title">Events</span>
+            <div class="skill-cat">
+              
+              <label for="html"
+                ><input type="checkbox" name="skills" id="html" value="HTML" />
+                  LGT
+                </label
+              >
+             
+              <label for="css"> <input type="checkbox" name="skills" id="css" value="CSS" /> WEB-O-THON</label>
+            
+              <label for="js">  <input type="checkbox" name="skills" id="js" value="JS" /> FUN EVENT</label>
+              
+              <label for="nodejs"><input
+                type="checkbox"
+                name="skills"
+                id="nodejs"
+                value="Node JS"
+              /> ROBOTICS</label>
+            </div>
+          </div>
+        </div>
+          <div class="form-submit">
+            <button id="button" type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="card-heading" id="card-heading"></div>
+    <div class="card" id="card"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
